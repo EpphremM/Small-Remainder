@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dome manipulation</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="back-drop"></div>
+    <header>
+        <div class="header-container">
+            <h1 id="title" class="fav">Favorite Movies</h1>
+        <button id="add" class="add">Add Movie</button>
+       </div>    
+    </header>
+    <main>
+        <div class="personal-data">
+            <H1 class="personal-data-title" id="personal-data">Your Personal Data</H1>
+            <ul id="data-entry"></ul>
+            <button id="delete" class="delete">Delete</button>
+        </div>
+    </main>
+    
+    <div class="model-container" id="model-container">
+        <div class="card-model-container card" id="model-input">
+            <label for="title">Movie Title</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="img-url">Image URL</label><br>
+            <input type="url" id="img-url" name="img-url"><br>
+            <label for="rating">Your Rating</label><br>
+            <input type="number" step="1" min="1" max="5" id="rating" name="rating"><br>
+          </div>
+          <div class="model-action">
+            <button class="btn btn-passive" id="no">Cancel</button>
+            <button class="btn btn-danger" id="yes">Add</button>
+          </div>   
+    </div>
+    <div class="model-caution" id="delete-caution">
+        <h2 class="model-title">Are You sure?</h2>
+        <p class="model-content">Are you sure you want to delete this item? This action is undone!</p>
+        <div class="btn-container">
+            <button class="btn2-passive" id="cNo">NO(Cancel)</button>
+            <button class="btn2-danger" id="cYes">Yes</button>
+        </div>
+        
+      </div>
+  
+</body>
+</html>
